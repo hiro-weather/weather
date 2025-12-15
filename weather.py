@@ -66,7 +66,9 @@ def create_ics(data):
 
     events = []
 
-    for i in range(7):
+    DAYS = min(10, len(daily["time"]))
+    for i in range(DAYS):
+
         d = today + timedelta(days=i)
         d_start = d.strftime("%Y%m%d")
         d_end = (d + timedelta(days=1)).strftime("%Y%m%d")
