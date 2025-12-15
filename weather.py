@@ -6,8 +6,10 @@ BASE_DIR = Path(__file__).parent
 ICS_FILE = BASE_DIR / "weather.ics"
 
 
-LAT = 35.6895
-LON = 139.6917
+LAT = 36.0706
+LON = 138.1322
+REAL_ELEVATION = 1350  # m
+LAPSE_RATE = 0.0065   # ℃ / m
 
 
 def fetch_weather():
@@ -52,6 +54,10 @@ def create_ics(data):
     today = date.today()
     now = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
 
+    model_elev = data.get("elevation", REAL_ELEVATION)
+    delta_h = REAL_ELEVATION - model_elev
+    temp_correction = delta_h * LAPSE_RATE
+
     daily = data["daily"]
     t_max_list = daily["temperature_2m_max"]
     t_min_list = daily["temperature_2m_min"]
@@ -65,8 +71,9 @@ def create_ics(data):
         d_start = d.strftime("%Y%m%d")
         d_end = (d + timedelta(days=1)).strftime("%Y%m%d")
 
-        t_max = t_max_list[i]
-        t_min = t_min_list[i]
+        t_max = round(t_max_list[i] - temp_correction, 1)
+        t_min = round(t_min_list[i] - temp_correction, 1)
+
         rain = rain_list[i]
         icon = weather_icon(weather_codes[i])
 
@@ -74,8 +81,13 @@ def create_ics(data):
         description = (
             f"最高気温: {t_max}°C\\n"
             f"最低気温: {t_min}°C\\n"
-            f"降水量: {rain}mm"
+            f"降水量: {rain}mm\\n"
+            f"想定標高: {REAL_ELEVATION}m\\n"
+            f"モデル標高: {int(model_elev)}m"
+            f"標高補正: -{temp_correction:.1f}℃\\n"
+
         )
+
 
         events.append(f"""BEGIN:VEVENT
 UID:weather-{d_start}@hiro-weather
@@ -99,14 +111,19 @@ END:VCALENDAR
         f.write(ics_text)
 
 
-
-
 def main():
     try:
         data = fetch_weather()
+
+        # ★ ここに追加 ★
+        print("Used latitude :", data.get("latitude"))
+        print("Used longitude:", data.get("longitude"))
+        print("Model elevation:", data.get("elevation"))
+
         create_ics(data)
     except Exception as e:
         print("❌ 天気取得失敗:", e)
+
 
 if __name__ == "__main__":
     main()
