@@ -4,59 +4,59 @@ PRODID:-//hiro-weather//Weather//
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:weather-20261119@hiro-weather
-DTSTAMP:20261119T105656Z
+DTSTAMP:20261119T191844Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
-SUMMARY:☔ 5.1° / -2.4°  0.3mm
-DESCRIPTION:最高気温: 5.1°C\n最低気温: -2.4°C\n降水量: 0.3mm\n想定標高: 1350m\nモデル標高: 1131m標高補正: -1.4℃\n
+SUMMARY:❄️ -0.4° / -3.9°  2.5mm
+DESCRIPTION:最高気温: -0.4°C\n最低気温: -3.9°C\n降水量: 2.5mm\n想定標高: 1350m\nモデル標高: 1131m標高補正: -1.4℃\n
 END:VEVENT
 BEGIN:VEVENT
 UID:weather-20261120@hiro-weather
-DTSTAMP:20261119T105656Z
+DTSTAMP:20261119T191844Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
-SUMMARY:❄️ -0.2° / -4.5°  2.5mm
-DESCRIPTION:最高気温: -0.2°C\n最低気温: -4.5°C\n降水量: 2.5mm\n想定標高: 1350m\nモデル標高: 1131m標高補正: -1.4℃\n
+SUMMARY:❄️ 1.4° / -4.2°  0.2mm
+DESCRIPTION:最高気温: 1.4°C\n最低気温: -4.2°C\n降水量: 0.2mm\n想定標高: 1350m\nモデル標高: 1131m標高補正: -1.4℃\n
 END:VEVENT
 BEGIN:VEVENT
 UID:weather-20261121@hiro-weather
-DTSTAMP:20261119T105656Z
+DTSTAMP:20261119T191844Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
-SUMMARY:❄️ 1.2° / -4.5°  0.5mm
-DESCRIPTION:最高気温: 1.2°C\n最低気温: -4.5°C\n降水量: 0.5mm\n想定標高: 1350m\nモデル標高: 1131m標高補正: -1.4℃\n
+SUMMARY:🌤️ 2.7° / -3.5°  0.0mm
+DESCRIPTION:最高気温: 2.7°C\n最低気温: -3.5°C\n降水量: 0.0mm\n想定標高: 1350m\nモデル標高: 1131m標高補正: -1.4℃\n
 END:VEVENT
 BEGIN:VEVENT
 UID:weather-20261122@hiro-weather
-DTSTAMP:20261119T105656Z
+DTSTAMP:20261119T191844Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
-SUMMARY:🌤️ 2.0° / -6.0°  0.0mm
-DESCRIPTION:最高気温: 2.0°C\n最低気温: -6.0°C\n降水量: 0.0mm\n想定標高: 1350m\nモデル標高: 1131m標高補正: -1.4℃\n
+SUMMARY:☁️ 4.6° / -5.6°  0.0mm
+DESCRIPTION:最高気温: 4.6°C\n最低気温: -5.6°C\n降水量: 0.0mm\n想定標高: 1350m\nモデル標高: 1131m標高補正: -1.4℃\n
 END:VEVENT
 BEGIN:VEVENT
 UID:weather-20261123@hiro-weather
-DTSTAMP:20261119T105656Z
+DTSTAMP:20261119T191844Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
-SUMMARY:☁️ 4.3° / -6.0°  0.0mm
-DESCRIPTION:最高気温: 4.3°C\n最低気温: -6.0°C\n降水量: 0.0mm\n想定標高: 1350m\nモデル標高: 1131m標高補正: -1.4℃\n
+SUMMARY:☔ 4.4° / -1.7°  16.8mm
+DESCRIPTION:最高気温: 4.4°C\n最低気温: -1.7°C\n降水量: 16.8mm\n想定標高: 1350m\nモデル標高: 1131m標高補正: -1.4℃\n
 END:VEVENT
 BEGIN:VEVENT
 UID:weather-20261124@hiro-weather
-DTSTAMP:20261119T105656Z
+DTSTAMP:20261119T191844Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
-SUMMARY:☔ 3.6° / -1.8°  14.7mm
-DESCRIPTION:最高気温: 3.6°C\n最低気温: -1.8°C\n降水量: 14.7mm\n想定標高: 1350m\nモデル標高: 1131m標高補正: -1.4℃\n
+SUMMARY:🌤️ 4.0° / -4.4°  0.0mm
+DESCRIPTION:最高気温: 4.0°C\n最低気温: -4.4°C\n降水量: 0.0mm\n想定標高: 1350m\nモデル標高: 1131m標高補正: -1.4℃\n
 END:VEVENT
 BEGIN:VEVENT
 UID:weather-20261125@hiro-weather
-DTSTAMP:20261119T105656Z
+DTSTAMP:20261119T191844Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
-SUMMARY:🌫️ 2.0° / -5.0°  0.0mm
-DESCRIPTION:最高気温: 2.0°C\n最低気温: -5.0°C\n降水量: 0.0mm\n想定標高: 1350m\nモデル標高: 1131m標高補正: -1.4℃\n
+SUMMARY:☁️ 7.9° / -3.4°  0.0mm
+DESCRIPTION:最高気温: 7.9°C\n最低気温: -3.4°C\n降水量: 0.0mm\n想定標高: 1350m\nモデル標高: 1131m標高補正: -1.4℃\n
 END:VEVENT
 
 END:VCALENDAR
